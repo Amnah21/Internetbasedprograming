@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="John Doe">
+        <meta name="application-name" content="OpenStreetMap">
+    </head>
+<body>
+
+<h1>Homework 1: HTML Links</h1>
+
+    <p><a href="https://travelwithfootlog.com/">Visit My Blog</a></p>
+    <p><a href="tel:+05525487997">Phone: +05525487997</a></p>
+    <p>Email: <a href="mailto:webmaster@example.com">xyz@gmail.com</a></p>
+    <p><a href="https://travelwithfootlog.com/" target="_blank">Open in New tab</a></p>
+    <p><a href="https://travelwithfootlog.com/" onclick="alert('This is another site!')" target="_blank">Visit My Blog</a></p>
+
+<h1>Homework 3: Input types</h1>
+
+    <label>Text: </label><br>
+    <input type="text" name="fname" placeholder="write your first name" required><br>
+    <label>Hidden: </label><br>
+    <input type="password" name="pass"><br>
+    <label>Tel: </label><br>
+    <input type="tel" name="phone"><br>
+    <label>Email: </label><br>
+    <input type="email" name="email"><br>
+    <label>Range: </label><br>
+    <input type="range" name="range"><br>
+    <label>Search: </label><br>
+    <input type="search" name="search"><br>
+    <label>Image: </label><br>
+    <input type="image" src="s3.jpg" alt="Submit" width="300" height="300"><br>
+    <label>Week: </label><br>
+    <input type="week" name="week"><br>
+    <label>URL: </label><br>
+    <input type="url" name="url"><br>
+    <label>Datetime-local: </label><br>
+    <input type="datetime-local" name="datetime-local"><br>
+    <label>Month: </label><br>
+    <input type="month" name="month"><br>
+    <label>Time: </label><br>
+    <input type="time" name="time"><br>
+<br>
+
+<h1>Homework 4: Forms</h1>
+
+<form action="store.php" method="get" target="_blank">
+    <!-- text -->
+        <label>First Name: </label><br>
+        <input type="text" name="fname" placeholder="write your first sname" required><br>
+        <label>Last Name: </label><br>
+        <input type="text" name="lname" minlength="3" maxlength="8"><br>
+        <label>Password: </label><br>
+        <input type="password" name="pass"><br>
+        <label>Phone: </label><br>
+        <input type="number" name="phone"><br>
+    <br>
+    <!-- radio button -->
+        <label>Gender: </label><br>
+        <input type="radio" name="g">
+        <label>Female </label><br>
+        <input type="radio" name="g">
+        <label>Male </label><br>
+    <br>
+    <!-- checkbox -->
+        <label>Interest:</label><br>
+        <input type="checkbox" name="c">
+        <label>Book</label><br>
+        <input type="checkbox" name="c">
+        <label>Web</label><br>
+        <input type="checkbox" name="c">
+        <label>Shopping</label><br>
+    <br>
+    <label>Class:</label><br>
+    <select>
+        <option value="opt1">opt1</option>
+        <option value="opt2">opt2</option>
+        <option value="opt3">opt3</option>
+    </select><br>
+    <br>
+    <!-- submit -->
+        <input type="submit" value="Submit Form">
+    </form>
+
+    <h2>Canvas</h2> 
+    <canvas id="canvas" height="100" width="400" style="border:1px solid #000000;"></canvas>
+
+</body>
+<script>
+    var c = document.getElementById("canvas");
+    var ctx = c.getContext("2d");
+    ctx.font = "30px Arial";
+    ctx.strokeText("Internet Based Programming", 10, 50);
+    </script>
+    
+</html>
